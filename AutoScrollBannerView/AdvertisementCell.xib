@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AdvertisementCell" rowHeight="202" id="KGk-i7-Jjw" customClass="AdvertisementCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Om-QZ-yTG">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="185"/>
+                    </scrollView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="F4e-07-lJZ">
+                        <rect key="frame" x="142" y="177" width="71" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="LCs-69-apV"/>
+                            <constraint firstAttribute="width" constant="71" id="gdR-j9-eyK"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" red="0.30980392159999998" green="0.75686274509999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-Ls-HU3">
+                        <rect key="frame" x="209" y="195" width="138" height="1"/>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="EoC-01-q3G"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kV-La-eOW">
+                        <rect key="frame" x="7" y="195" width="138" height="1"/>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DbP-s7-S6L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="F4e-07-lJZ" secondAttribute="centerX" id="2Qr-t2-O4I"/>
+                    <constraint firstItem="7Om-QZ-yTG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="8tZ-BF-XNc"/>
+                    <constraint firstItem="ANg-Ls-HU3" firstAttribute="leading" secondItem="F4e-07-lJZ" secondAttribute="leading" constant="67" id="9Ni-Rh-tdT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ANg-Ls-HU3" secondAttribute="bottom" constant="4" id="CHL-qE-KWq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Om-QZ-yTG" secondAttribute="trailing" constant="-8" id="F5h-ae-gK9"/>
+                    <constraint firstItem="7Om-QZ-yTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="PDv-hY-Xtz"/>
+                    <constraint firstItem="F4e-07-lJZ" firstAttribute="trailing" secondItem="4kV-La-eOW" secondAttribute="trailing" constant="68" id="WZP-6r-DGc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7Om-QZ-yTG" secondAttribute="bottom" constant="15" id="bTf-RA-X5Y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="F4e-07-lJZ" secondAttribute="bottom" constant="-14" id="gKS-DU-3bX"/>
+                    <constraint firstItem="7Om-QZ-yTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="nV0-AT-yT7"/>
+                    <constraint firstItem="ANg-Ls-HU3" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rDs-hx-kbL"/>
+                    <constraint firstItem="4kV-La-eOW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="tO7-cC-iMZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4kV-La-eOW" secondAttribute="bottom" constant="4" id="vCx-VG-O7Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Om-QZ-yTG" secondAttribute="trailing" constant="-16" id="wEC-gl-cjg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PDv-hY-Xtz"/>
+                        <exclude reference="wEC-gl-cjg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="myScroll" destination="7Om-QZ-yTG" id="LFm-nu-bdR"/>
+                <outlet property="pageControl" destination="F4e-07-lJZ" id="Fxq-fA-bXa"/>
+            </connections>
+            <point key="canvasLocation" x="223.5" y="226"/>
+        </tableViewCell>
+    </objects>
+</document>
